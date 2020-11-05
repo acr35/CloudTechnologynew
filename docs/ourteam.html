@@ -26,45 +26,36 @@
 
         }
 
-        .row2,
-        .row3{
-            display: flex;
-            font-family: "Times New Roman",serif;
+        .grid-container1 {
+            display: grid;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
         }
 
 
 
-        .row3{
-            height: 320px;
-            order: 3;
-            text-align: left;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
 
 
 
-        }
-
-        .row2{
-            order: 2;
-        }
 
 
 
-        .row2 .cell {
-            text-align: left;
-            flex-direction: column;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
 
 
 
-        }
-        .cell{
-            font-size: 30px;
-        }
+
+
+
+
+
 
         .jumbotron {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
@@ -80,6 +71,7 @@
         .heading1{
             color: lightslategrey;
             text-align: center;
+            text-shadow: 2px 2px black;
         }
 
 
@@ -103,12 +95,12 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        How the Internet Works                    </a>
+                        Cloud Technology                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="datacenter.html">Domain names and ICANN</a>
-                        <a class="dropdown-item" href="dockertutorial.html">IP Addresses, Packets and Routing</a>
-                        <a class="dropdown-item" href="kuberdocker.html">DNS</a>
-                        <a class="dropdown-item" href="virtacont.html">HTTP and HTTPS protocols</a>
+                        <a class="dropdown-item" href="datacenter.html">Data Center</a>
+                        <a class="dropdown-item" href="dockertutorial.html">Docker Tutorial</a>
+                        <a class="dropdown-item" href="kuberdocker.html">Kuber/Docker</a>
+                        <a class="dropdown-item" href="virtacont.html">VirtaCont</a>
                     </div>
                 </li>
             </ul>
@@ -117,41 +109,27 @@
 </div>
 
 
-    <div class="jumbotron">
-        <div class = "heading1">
-            <h1>Our Team</h1>
-        </div>
-
+<div class="jumbotron">
+    <div class = "heading1">
+        <h1>Our Team</h1>
     </div>
 
-    <div class="row2">
-        <div class="cell">
+</div>
 
 
+<h1>About Us</h1>
 
-        </div>
-        <div class="cell">
+<div class="grid-container1">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+</div>
 
-
-
-        </div>
-        <div class="cell">
-
-
-
-
-        </div>
-
-    </div>
-
-    <div class="row3">
-        <div class="">
-        </div>
+<div class="grid-container2">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+</div>
 
 
-
-
-    </div>
 
 
 
