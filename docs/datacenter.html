@@ -21,22 +21,21 @@
             margin: 5px;
             flex: 1 100%;
         }
-        .row2,
-        .row3{
-            display: flex;
-            font-family: "Times New Roman",serif;
-        }
-        .row3{
-            height: 320px;
-            order: 3;
-            text-align: left;
+
+        .row1 .cell{
             margin: 10px;
             padding: 20px;
             font-size: 30px;
+            font-family: "Times New Roman", serif;
+
+
         }
-        .row2{
-            order: 2;
+        .row2 {
+            display: flex;
+            font-family: "Times New Roman", serif;
         }
+
+
         .row2 .cell {
             text-align: left;
             flex-direction: column;
@@ -44,9 +43,7 @@
             padding: 20px;
             font-size: 30px;
         }
-        .row2 .heading2{
-            color: #721c24;
-        }
+
         .cell{
             font-size: 30px;
         }
@@ -56,12 +53,25 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 10px;
+
         }
         .heading1{
             color: lightslategrey;
             text-align: center;
             text-shadow: 2px 2px black;
+            padding-top: 60px;
         }
+        .row2 .cell{
+            padding-right: 100px;
+        }
+
+
+
+        .row2 .pics2{
+            padding-top: 200px;
+        }
+
     </style>
 </head>
 <body>
@@ -97,9 +107,11 @@
 <!--Jumbotron BG Image-->
 <div class="jumbotron">
     <div class = "heading1">
-        <h1>Virtualization and Containerization</h1>
+        <h1>Data Center</h1>
     </div>
+
 </div>
+
 
 
 
@@ -114,14 +126,25 @@
         <p>
         </p>
     </div>
+
+
+
+
+<div class="row1">
+
     <div class="cell">
+        <h2><b>What are Data Centers?</b></h2>
+        <p>Internet requires lots of machines to serve all the different sites that you visit. However, the process of crawling the entire web, building up search indexes and having the machines available to quickly and accurately respond to search queries requires large numbers of machines.  These machines are located in data centers. Data centers hosts thousands of machines known as servers.
+        Cloud basically refers to storing and hosting your files in data center.
     </div>
-</div>
-<div class="row3">
-    <div class="footer-img">
-        <img src="https://www.accuwebhosting.com/blog/wp-content/uploads/2020/04/hyper-virtualization.jpg" alt="" width="300" height="300">
+
+
+
+
+
+
     </div>
-</div>
+
 
 
 
@@ -137,4 +160,52 @@
 
 
 </body>
+
+    <div class="row2">
+
+        <div class = "pics">
+            <img src="https://i.pinimg.com/originals/cf/4b/e2/cf4be29731612b765f2ded3df8ce2fa8.jpg" alt="" width="300" height="300">
+
+        </div>
+        <div class="pics2">
+            <img src="https://www.cbronline.com/wp-content/uploads/2017/03/Fotolia_123123866_Subscription_Monthly_M-770x433.jpg" alt="" width="300" height="300">
+
+        </div>
+
+
+
+
+        <div class="cell">
+            <p>In other terms, data centers houses an organization’s IT operations and equipment and where it stores, manages, disseminates its data.
+                The data center may vary depending on its primary function but typically it is supported and managed by one of the following categories:</p>
+            <ul>
+             <li>enterprise
+             </li>
+                <li>multi-tenant data center and colocation facilities
+                </li>
+                <li>hypserscale and cloud
+                </li>
+                <li>carries and service provider
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- JQuery, Popper.js, Bootstrap JS -->
+<script src="" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+</div></body>
+
 </html>
