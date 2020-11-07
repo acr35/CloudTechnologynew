@@ -1,23 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Our Team</title>
+    <!--Internal CSS -->
     <style>
         .navbar {
             background-color: slategrey !important;
+            height: 70px;
+            padding: 30px;
+            margin: 0;
+            border-radius: 10px;
 
         }
+        .title{
+            text-align: center;
+            color: #4e555b;
+            text-shadow: 3px 3px black;
+
+
+        }
+
+
+        *{
+            padding: 5px;
+            margin: 5px;
+            flex: 1 100%;
+
+
+
+        }
+
+        .grid-container1 {
+            display: grid;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            margin-left: 50px;
+
+
+
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            margin-left: 50px;
+        }
+
+        .grid-item {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            font-size: 30px;
+            text-align: center;
+
+
+
+
+
+        }
+
+
+
+        .jumbotron {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+            height: 25vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 60px;
+
+
+        }
+
+
+        .heading1{
+            color: lightslategrey;
+            text-align: center;
+            text-shadow: 5px 5px black;
+        }
+
 
     </style>
 </head>
 <body>
 
-<!-- JQuery, Popper.js, Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!-- Adding NavBar -->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,12 +105,12 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        How the Internet Works                    </a>
+                        Cloud Technology                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="datacenter.html">Domain names and ICANN</a>
-                        <a class="dropdown-item" href="dockertutorial.html">IP Addresses, Packets and Routing</a>
-                        <a class="dropdown-item" href="kuberdocker.html">HTTP and HTTPS protocols</a>
-                        <a class="dropdown-item" href="virtacont.html">W3C and HTML and CSS</a>
+                        <a class="dropdown-item" href="datacenter.html">Data Center</a>
+                        <a class="dropdown-item" href="dockertutorial.html">Docker Tutorial</a>
+                        <a class="dropdown-item" href="kuberdocker.html">Kuber/Docker</a>
+                        <a class="dropdown-item" href="virtacont.html">VirtaCont</a>
                     </div>
                 </li>
             </ul>
@@ -47,6 +118,56 @@
     </nav>
 </div>
 
+
+<div class="jumbotron">
+    <div class = "heading1">
+        <h1>Our Team</h1>
+    </div>
+
+</div>
+
+<div class="title">
+    <h1>About Us</h1>
+
+
+
+</div>
+
+
+
+<div class="grid-container1">
+    <div class="grid-item">
+        <div class="footer-img">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3eUYRmSo92iLCJZFoyUQJPg8FxAv-I9WfwsQXEHbz8hl0KE2mQ09UmvfHt7S_ZbMAJrsq1wBky0Stoc8-WKxFir_655Q5VGN45A0UCkMkM_4AaEcCToj3rBKLt03h95wG5z651G1do5MgFj8vA12cV9=w1256-h1674-no?authuser=0" alt="" width="300" height="300">
+        </div>
+    </div>
+    <div class="grid-item">
+        <p>My name is Abhishek Ranpura. I am currently a junior at NJIT, and I am pursuing a Business and Information Systems Degree. I am very interested in the uses of web applications and my hobbies include photography, video-gaming, learning new things, and listening to music.</p></div>
+</div>
+
+<div class="grid-container2">
+    <div class="grid-item"><p>Hello!!! My name is Ilayda Turkmen and I’m Human Computer Interaction major at NJIT. I have always loved art and design, so this major is the perfect fit for me. I am highly motivated for these upcoming years as a college student.
+    </p></div>
+    <div class="grid-item">
+        <div class="footer-img">
+            <img src="https://lh3.googleusercontent.com/kD5gAGAXz6jYOw0JqZcX2oelscuMEk-jn6lVTV-D3iyFzFd2DtOy7wBmdmFUcfxfmowTnFwClc8dLsqUKiptI0NB6vTteAZkDV0B2x3l2p9074cxNPffb7OI-ilZEZF7ObOBtWp8hDgaNajokkDMfUhzptPVIna8UbAZrV3Q38WkqyJJylWOyU-w2pU-Zhl04DM74Iux2nQODMkrUvjKKwVnoq3lj4kH32tuNbl5Nzhzh7gXKfE2OfjbLV5SqL9wNYTXq9guKLlf1S33WD_Jh8eNEkhynSN0FiZwJZdLqcp7-6m5ldKmO5ta_kWtmyJJx5LgAcWP7gRANHjgBRfTUYjoDBlG5AUtiK7DmLiSeq3GI57sggRyp4KjAGtvOPhqlrRlNBZdzbtAXuGrlc_86bGtuYBJSUd9wSKXNUU5XNe31WiprT9fdyOdwpl7yRkwwjrpxXJcDhoRSkFbdR2OwrEf-GYJH2bwIU7StBgUPqkAbh0M13E8zyditFFNHuaFoiGlP_dX27DHdeJPb9gfUP9IslHpeF3IcO0AvS71MLIQlCxT39kPhTj78KLv6z8-mwA_Tf8dLBJmdN8mzRorikY2YMOtt6NwflI-UJPQBcj3sFHuFGvAI8-r3fUoKfDZVPenrGa7momvRD3ABUjdXBdr8zPv1DHzIAa8Pv0oyFGRkd66-s8KQkcWho3EDv0=w652-h636-no?authuser=0" alt="" width="300" height="300">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- JQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>

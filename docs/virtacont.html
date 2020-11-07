@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Virtualization/Containerization</title>
+    <!--Internal CSS -->
     <style>
         .navbar {
             background-color: slategrey !important;
@@ -25,25 +29,17 @@
 
         }
 
-        .row2,
-        .row3{
+        .row2{
             display: flex;
             font-family: "Times New Roman",serif;
         }
 
 
 
-        .row3{
-            height: 320px;
-            order: 3;
-            text-align: left;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
 
 
 
-        }
+
 
         .row2{
             order: 2;
@@ -64,11 +60,7 @@
 
         }
 
-        .row2 .heading2{
-            color: #721c24;
 
-
-        }
         .cell{
             font-size: 30px;
         }
@@ -79,6 +71,9 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 10px;
+
+
 
 
         }
@@ -88,8 +83,23 @@
             color: lightslategrey;
             text-align: center;
             text-shadow: 2px 2px black;
+            padding-top: 60px;
 
         }
+
+        .row3 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 500px;
+            order: 3;
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+
+
+        }
+
+
 
 
 
@@ -98,10 +108,6 @@
 </head>
 <body>
 
-<!-- JQuery, Popper.js, Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!-- Adding NavBar -->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -144,37 +150,75 @@
 <div class="row2">
     <div class="cell">
 
+            <h1><b>Virtualization</b></h1>
+            <p>Virtualization is basically the emulation of a container system which means that it makes it possible to run what appears to be on many separate computers on hardware that is actually one computer.
+                The operating systems and their applications share hardware resources from a single host server or from a pod of host servers
+
+            </p>
+            <ul>
+                <li>
+                    running multiple applications on the same physical hardware
+                </li>
+                <li>placing each application on its own virtual machine
+                </li>
+            </ul>
+        <h2><b>Pros</b></h2>
+        <ul>
+            <li>
+                all Os resources are  to apps
+            </li>
+            <li>
+                established security and management tools
+            </li>
+            <li>better known security controls
+            </li>
+        </ul>
+        <h2><b>Cons</b></h2>
+        <ul>
+            <li>virtual machines bulky in size
+            </li>
+            <li>running multiple virtual machines lead to unstable performance</li>
+            <li>boot up process take longe time and virtual machines not solve the problem
+
+            </li>
+        </ul>
+
+
 
 
     </div>
     <div class="cell">
-        <div class ="heading2">
-        <h2>Similarities and Differences Between Virtualization and Containerization </h2>
-
-    </div>
-        <p>
+        <h2><b>Containerization</b></h2>
+        <p>Instead of virtualizing the underlying computer, only the operating system virtualized. Container sit on top of a physical server and each container shares the host operating system kernel and usually the binaries. Server can run multiple workloads with a single operating system installation . Also, containers can create portable consistent operating environments for development testing.
         </p>
+        <h2><b>Similarities and Differences Between Virtualization and Containerization:</b></h2>
+        <ul>
+            <li>while containers are exceptionally light and take few seconds to start, virtual machines take minutes  to run and are an order of magnitude larger than the equivalent container. </li>
+            <li>virtualization create many Operating systems in one host machine, while containerization create multiple containers for each type of application.
+            </li>
+            <li>you can put two to three as many applications in a single server with containers that you can with virtual machines
+            </li>
+        </ul>
+
+
+    </div>
+
+
 
 
 
 
     </div>
-    <div class="cell">
-
-
-
-
-
-    </div>
-
-</div>
-
 <div class="row3">
     <div class="footer-img">
-        <img src="https://www.accuwebhosting.com/blog/wp-content/uploads/2020/04/hyper-virtualization.jpg" alt="" width="300" height="300">
+        <img src="https://www.backblaze.com/blog/wp-content/uploads/2018/06/whats-the-diff-container-vs-vm.jpg" alt="" width="300" height="300">
     </div>
-
-
+    <div class="footer-img">
+        <img src="https://www.weave.works/assets/images/bltb6200bc085503718/containers-vs-virtual-machines.jpg" alt="" width="300" height="300">
+    </div>
+    <div class="footer-img">
+        <img src="https://www.cloudsigma.com/wp-content/uploads/cgroups-docker.jpg" alt="" width="300" height="300">
+    </div>
 
 
 </div>
@@ -188,6 +232,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 
 </body>
