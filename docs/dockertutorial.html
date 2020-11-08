@@ -140,7 +140,7 @@
 
         </div>
         <div class="col-6">
-            Advantages and Disadvantages:
+            System Requirements:
         </div>
         <div class="col">
 
@@ -151,9 +151,56 @@
 
         </div>
         <div class="col-8">
-            <p>There are various advantages and disadvantages to using both of these software. The advantages of using Docker are that it provides security, highly portable workloads, its fast, and uses less space to function the same way as a virtual machine would. Kubernetes also proves to be very beneficial because it restarts Docker applications in a server stack case they crash. Kubernetes automates number of instances that an application can be ran and other parameters that go along with the application. Furthermore, the micro-services that Kubernetes provides allows for Docker applications to communicate with. Lastly, Kubernetes proves a neat user interface that allows the user to monitor its services.</p>
+            <p>Before you start to install Docker Desktop, you must make sure you have the following pre-requisites on your computer:</p>
+            <ul>
+                <li>Windows 10 64-bit: Pro, Enterprise, or Education (build 16299 or later)</li>
+                <li>Hyper-V and Containers Windows features must be enabled</li>
+                <li>64-bit processor with Second Level Address Translation (SLAT)</li>
+                <li>4GB System RAM</li>
+                <li>BIOS-level hardware virtualization support must be enabled in the BIOS settings.</li>
+            </ul>
+        </div>
+        <div class="col">
 
-            <p>Although Docker has its benefits, not all applications function well with Docker (specifically graphical applications). Furthermore, once a container is deleted on Docker it cannot be retrieved again unless the contents were stored elsewhere as well. Kubernetes also has its drawbacks; a major one being that it is complex to use and would not seem productive for simple applications. Also, Kubernetes is more expensive than other alternative options that can serve similar functions. </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-6">
+            Creating A Docker Repository & Storing an Image:
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-8">
+            <ul>
+                <li><b>Step 1:</b> Click on the Windows Icon and type "CMD" into the search bar</li>
+                <li><b>Step 2:</b> Right-click on "Command Prompt" and select the "Run as administrator" option</li>
+                <li><b>Step 3:</b> After the Command Prompt instance opens up, type "docker pull ubuntu" and press the ENTER key</li>
+                <li><b>Step 4:</b> After Docker is done pulling the ubuntu image, type "docker run -it ubuntu:latest /bin/bash". This command makes a container to help you run the ubuntu image.</li>
+                <li><b>Step 5:</b> After the Docker container for the ubuntu image is made, type the command "apt-get update"</li>
+                <li><b>Step 6:</b> After the Ubuntu updates are installed, install the Apache webserver using the command "apt-get install apache2". Fill out additional information that you will be asked (timezone, geolocation)</li>
+                <li><b>Step 7:</b> Once the Apache2 webserver has been installed, download a document editor using the command "apt-get install vim"</li>
+                <li><b>Step 8:</b> Now that vim is installed, open another Command Prompt window (run it as administrator). Type in "docker ps"</li>
+                <li><b>Step 9:</b> Since this our first time using docker you should only see 1 container, but in the instance this isn’t your first time with docker look for the docker container with “ubuntu:latest” in it’s name and copy the container ID</li>
+                <li><b>Step 10:</b> To make a new Apache webserver Image, type "docker commit &ltContainer ID&gt &ltnew image name&gt"</li>
+                <li><b>Step 11:</b> You can now close the original Command Prompt window that was used</li>
+                <li><b>Step 12:</b> Now it is time to boot up our Apache Web Server. We will do so with this command “docker run -it -p 127.0.0.1:80:80 -v &ltFolderOnMachine&gt:/var/www/html new image name /bin/bash”</li>
+                <li><b>Step 13:</b> After this is done, an Apache2 instance will boot up; type "cd /var/www/html"</li>
+                <li><b>Step 14:</b> To make a file, type "vim.&ltfilename&gt.html"</li>
+                <li><b>Step 15:</b> Type in basic html site content (html tag, head tag, body tag, words in a paragraph tag, etc)</li>
+                <li><b>Step 16:</b> When you are done adding html site content, press the ESCAPE/ESC key, then type ";wq", and then press the ENTER key</li>
+                <li><b>Step 17:</b> Type the command "cd /"</li>
+                <li><b>Step 18:</b> Type “etc/init.d/apache2 restart”</li>
+                <li><b>Step 19/Last Step:</b> View your website by going into your web browser of choice, typing "127.0.0.1", and pressing the ENTER key</li>
+            </ul>
         </div>
         <div class="col">
 
